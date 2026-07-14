@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>音乐作品 | BOYNEXTDOOR</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:"Microsoft Yahei",sans-serif}
+header{
+  background:#003366;
+  padding:16px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center
+}
+.logo{
+  font-size:22px;
+  font-weight:bold;
+  color:#ffffff
+}
+nav a{
+  color:#87ceeb;
+  text-decoration:none;
+  margin-left:22px;
+  font-size:16px
+}
+nav a:hover{color:#b3e5fc}
+body{
+  background: linear-gradient(180deg, #ffffff 0%, #f0f8ff 30%, #e0f0ff 60%, #cce7ff 100%);
+  color:#000;
+  min-height:100vh
+}
+h1{
+  text-align:center;
+  margin:32px 0;
+  font-size:28px;
+  color:#000
+}
+.container{
+  max-width:1300px;
+  margin:0 auto 50px;
+  padding:0 20px
+}
+.album-section{
+  background:#fff;
+  border-radius:12px;
+  padding:24px;
+  margin-bottom:24px;
+  box-shadow:0 3px 15px #b3d4f2
+}
+.section-title{
+  font-size:20px;
+  font-weight:bold;
+  margin-bottom:20px;
+  padding-bottom:8px;
+  border-bottom:2px solid #cce0ff;
+  color:#003366
+}
+/* 3列网格布局，移动端自动适配 */
+.album-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px
+}
+.album-card{
+  border:1px solid #e0ecff;
+  border-radius:10px;
+  padding:16px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  background:#f8fbff;
+  transition:0.3s
+}
+.album-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 12px #c0d8f5
+}
+.album-card img{
+  width:170px;
+  height:170px;
+  object-fit:cover;
+  border-radius:8px;
+  margin-bottom:12px
+}
+.album-name{
+  font-weight:bold;
+  font-size:16px;
+  margin-bottom:6px
+}
+.release-date{
+  font-size:14px;
+  color:#444
+}
+/* 响应式：小屏幕自动改为2列 */
+@media (max-width:992px){
+  .album-grid{grid-template-columns:repeat(2,1fr);}
+}
+/* 手机端改为1列 */
+@media (max-width:576px){
+  .album-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">BOYNEXTDOOR</div>
+  <nav>
+    <a href="home.html">首页</a >
+    <a href="members.html">成员介绍</a >
+    <a href="works.html" class="active">音乐作品</a >
+    <a href="variety.html">团综合集</a >
+  </nav>
+</header>
+<h1>BOYNEXTDOOR 全部音乐作品</h1>
+<div class="container">
+  <!-- 韩国EP -->
+  <div class="album-section">
+    <div class="section-title">韩国EP</div>
+    <div class="album-grid">
+      <div class="album-card">
+        <img src="page/0_who.jpg" alt="WHO!封面">
+        <div class="album-name">1st Single Album《WHO!》</div>
+        <div class="release-date">发行：2023.05.30</div>
+      </div>
+      <div class="album-card">
+        <img src="page/1_why.jpg" alt="WHY..封面">
+        <div class="album-name">1st EP《WHY..》</div>
+        <div class="release-date">发行：2023.09.04</div>
+      </div>
+      <div class="album-card">
+        <img src="page/2_how.jpg" alt="HOW?封面">
+        <div class="album-name">2nd EP《HOW?》</div>
+        <div class="release-date">发行：2024.04.15</div>
+      </div>
+      <div class="album-card">
+        <img src="page/3_19.99.jpg" alt="19.99封面">
+        <div class="album-name">3rd EP《19.99》</div>
+        <div class="release-date">发行：2024.09.09</div>
+      </div>
+      <div class="album-card">
+        <img src="page/4_nogenere.jpg" alt="No Genre封面">
+        <div class="album-name">4th EP《No Genre》</div>
+        <div class="release-date">发行：2025.05.13</div>
+      </div>
+      <div class="album-card">
+        <img src="page/5_theaction.jpg" alt="The Action封面">
+        <div class="album-name">《The Action》</div>
+        <div class="release-date">发行：2025.10.20</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 韩国正规专 -->
+  <div class="album-section">
+    <div class="section-title">韩国正规专辑</div>
+    <div class="album-grid">
+      <div class="album-card">
+        <img src="page/home.jpg" alt="Home封面">
+        <div class="album-name">《Home》</div>
+        <div class="release-date">发行：2026.06.08</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 日本发行 -->
+  <div class="album-section">
+    <div class="section-title">日本发行作品</div>
+    <div class="album-grid">
+      <div class="album-card">
+        <img src="page/jp0_and.jpg" alt="AND,封面">
+        <div class="album-name">《AND,》</div>
+        <div class="release-date">发行：2024.07.10</div>
+      </div>
+      <div class="album-card">
+        <img src="page/jp1_boylife.jpg" alt="BOYLIFE封面">
+        <div class="album-name">《BOYLIFE》</div>
+        <div class="release-date">发行：2025.08.17</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 特别单曲 -->
+  <div class="album-section">
+    <div class="section-title">特别单曲</div>
+    <div class="album-grid">
+      <div class="album-card">
+        <img src="page/fan.jpg" alt="IF I SAY, I LOVE YOU封面">
+        <div class="album-name">《IF I SAY, I LOVE YOU》</div>
+        <div class="release-date">发行：2025.01.06</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- OST -->
+  <div class="album-section">
+    <div class="section-title">影视原声带 OST</div>
+    <div class="album-grid">
+      <div class="album-card">
+        <img src="page/ost1.jpg" alt="Fadeaway封面">
+        <div class="album-name">《Fadeaway》</div>
+        <div class="release-date">发行：2023.11.07</div>
+      </div>
+      <div class="album-card">
+        <img src="page/ost2.jpg" alt="Lucky Charm封面">
+        <div class="album-name">《Lucky Charm》</div>
+        <div class="release-date">发行：2024.06.29</div>
+      </div>
+      <div class="album-card">
+        <img src="page/ost3.jpg" alt="이렇게 좋아해 본 적이 없어요封面">
+        <div class="album-name">《이렇게 좋아해 본 적이 없어요》</div>
+        <div class="release-date">发行：2025.03.14</div>
+      </div>
+      <div class="album-card">
+        <img src="page/ost4.jpg" alt="Ruin My Life封面">
+        <div class="album-name">《Ruin My Life》</div>
+        <div class="release-date">发行：2025.10.01</div>
+      </div>
+      <div class="album-card">
+        <img src="page/ost5.jpg" alt="SAY CHEESE!封面">
+        <div class="album-name">《SAY CHEESE!》</div>
+        <div class="release-date">发行：2025.11.09</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>成员介绍 | BOYNEXTDOOR</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:"Microsoft Yahei",sans-serif}
+header{
+  background:#003366;
+  padding:16px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center
+}
+.logo{
+  font-size:22px;
+  font-weight:bold;
+  color:#ffffff
+}
+nav a{
+  color:#87ceeb;
+  text-decoration:none;
+  margin-left:22px;
+  font-size:16px
+}
+nav a:hover{color:#b3e5fc}
+body{
+  background: linear-gradient(180deg, #ffffff 0%, #f0f8ff 30%, #e0f0ff 60%, #cce7ff 100%);
+  color:#000;
+  min-height:100vh
+}
+h1{
+  text-align:center;
+  margin:32px 0;
+  font-size:28px;
+  color:#000
+}
+.member-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(360px,1fr));
+  gap:28px;
+  max-width:1400px;
+  margin:0 auto 50px;
+  padding:0 20px
+}
+.member-card{
+  background:#fff;
+  border-radius:12px;
+  padding:20px;
+  box-shadow:0 3px 15px #b3d4f2;
+  display:flex;
+  flex-direction:column;
+  gap:14px
+}
+/* 3:2 图片比例容器 */
+.member-img-box{
+  width:100%;
+  height:280px; /* 宽:高 = 3:2 */
+  border-radius:8px;
+  overflow:hidden;
+}
+.member-img-box img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.name-title{
+  font-size:20px;
+  font-weight:bold;
+  padding-bottom:8px;
+  border-bottom:1px solid #cce0ff
+}
+.info-list{
+  font-size:14px;
+  line-height:1.7;
+  color:#222
+}
+.info-list p{margin:4px 0}
+.tag{
+  display:inline-block;
+  background:#cce0ff;
+  padding:3px 10px;
+  border-radius:14px;
+  font-size:12px;
+  margin-right:6px;
+  margin-top:4px
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">BOYNEXTDOOR</div>
+  <nav>
+    <a href="home.html">首页</a >
+    <a href="members.html" class="active">成员介绍</a >
+    <a href="works.html">音乐作品</a >
+    <a href="variety.html">团综合集</a >
+  </nav>
+</header>
+<h1>成员介绍</h1>
+<div class="member-grid">
+  <!-- 1. SUNGHO 朴成淏 2003.09.04 -->
+  <div class="member-card">
+    <img src="page/1.jpg" alt="朴成淏">
+    <div class="name-title">SUNGHO｜朴成淏</div>
+    <div class="info-list">
+      <p>本名：박성호</p >
+      <p>国籍：韩国</p >
+      <p>生日：2003.09.04｜处女座｜A型｜ENTJ</p >
+      <p>动物塑：猫咪、狐狸</p >
+      <p>家乡：韩国江原道原州市</p >
+      <p>毕业院校：蚕室新星高中</p >
+      <p>家庭成员：爸爸、妈妈、哥哥、辛巴（橘猫）</p >
+      <p>兴趣爱好：绘画，骑马，足球，FIFA</p >
+      <p>喜欢的食物：薄荷巧克力、草莓拿铁、肉类（海鲜除外）</p >
+      <p>喜欢的颜色：淡蓝色和淡紫色</p >
+    </div>
+  </div>
+
+  <!-- 2. RIWOO 李常赫 2003.10.22 -->
+  <div class="member-card">
+    <img src="page/2.jpg" alt="李常赫">
+    <div class="name-title">RIWOO｜李常赫</div>
+    <div class="info-list">
+      <p>本名：이상혁</p >
+      <p>国籍：韩国</p >
+      <p>生日：2003.10.22｜天秤座｜A型｜ISFP</p >
+      <p>动物塑：水獭、博美</p >
+      <p>家乡：韩国首尔特别市江北区樊洞</p >
+      <p>毕业院校：翰林演艺艺术高中</p >
+      <p>家庭成员：爸爸、妈妈、哥哥、大发（博美）、赞尼（博美）</p >
+      <p>喜欢的食物：甜甜圈、华夫饼等甜品</p >
+      <p>喜欢的颜色：蓝色、红色、黑色</p >
+      <p>喜欢的季节：秋天</p >
+    </div>
+  </div>
+
+  <!-- 3. Jaehyun 明宰铉 2003.12.04 -->
+  <div class="member-card">
+    <img src="page/3.jpg" alt="明宰铉">
+    <div class="name-title">JAEHYUN｜明宰铉</div>
+    <div class="info-list">
+      <p>本名：명재현</p >
+      <p>国籍：韩国</p >
+      <p>生日：2003.12.04｜射手座｜A型｜ENFP</p >
+      <p>动物塑：狗、狼</p >
+      <p>家乡：首尔特别市铜雀区大方洞</p >
+      <p>毕业院校：城南高中</p >
+      <p>家庭成员：爸爸、妈妈、哥哥</p >
+      <p>定位：队长</p >
+    </div>
+  </div>
+
+  <!-- 4. TAESAN 韩东盿 2004.08.10 -->
+  <div class="member-card">
+    <img src="page/4.jpg" alt="韩东盿">
+    <div class="name-title">TAESAN｜韩东盿</div>
+    <div class="info-list">
+      <p>本名：한동민</p >
+      <p>国籍：韩国</p >
+      <p>生日：2004.08.10｜狮子座｜A型｜INTJ</p >
+      <p>动物塑：黑猫</p >
+      <p>家乡：光州</p >
+      <p>毕业院校：清潭高中</p >
+      <p>家庭成员：爸爸、妈妈、弟弟、妹妹</p >
+    </div>
+  </div>
+
+  <!-- 5. Leehan 金桐儇 2004.10.20 -->
+  <div class="member-card">
+    <img src="page/5.jpg" alt="金桐儇">
+    <div class="name-title">LEEHAN｜金桐儇</div>
+    <div class="info-list">
+      <p>本名：김동현</p >
+      <p>国籍：韩国</p >
+      <p>生日：2004.10.20｜天秤座｜O型｜ESFJ</p >
+      <p>动物塑：鱼、萨摩耶、兔子、狮子</p >
+      <p>家乡：釜山</p >
+      <p>毕业院校：清潭高中</p >
+      <p>家庭成员：爸爸、妈妈、姐姐、coni（马尔济斯）</p >
+      <p>兴趣爱好：养鱼、游泳、装饰鱼缸、钓鱼</p >
+    </div>
+  </div>
+
+  <!-- 6. WoonHak 金云鹤 2006.11.29 -->
+  <div class="member-card">
+    <img src="page/6.jpg" alt="金云鹤">
+    <div class="name-title">WOONHAK｜金云鹤</div>
+    <div class="info-list">
+      <p>本名：김운학</p >
+      <p>国籍：韩国</p >
+      <p>生日：2006.11.29｜射手座｜A型｜ENFP</p >
+      <p>动物塑：小熊、雪人</p >
+      <p>家乡：韩国京畿道水原</p >
+      <p>毕业院校：翰林演艺艺术高中实用音乐系</p >
+      <p>家庭成员：爸爸、妈妈、妹妹（碳酸水）</p >
+      <p>定位：忙内</p >
+    </div>
+  </div>
+</div>
+</body>
+</html>
